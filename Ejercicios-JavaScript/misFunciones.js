@@ -90,3 +90,19 @@ function dividir() {
     n2= document.getElementsByName(elementName= "div_num2")[0].value;
     n2= document.getElementsByName(elementName= "div_total")[0].innerHTML =n1/ Number(n2);
 }
+function Cargarweb(){
+    var cant,uni, urlcomp;
+    cant =document.getElementById(elementid= "distancia").value;
+    uni =document.getElementsByName(elementName="unidades")[0].value;
+
+    urlcomp="segundaWeb.html"+"#"+cant +"#"+uni;
+    window.open(urlcomp);
+
+}
+function CargarResultado(){
+    var urlcomp, cant, uni;
+    urlcomp=window.location.href.split(separator="/")[5];
+    cant=urlcomp.split(separator="#")[1];
+    uni=urlcomp.split(separator="#")[2];
+    document.getElementById(elementid="dist").value= cant + " "+ uni;
+}
