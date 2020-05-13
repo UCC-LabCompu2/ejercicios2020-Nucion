@@ -54,3 +54,27 @@ function mo(vmo){
     }
 
 }
+function sumar() {
+    var n1,n2;
+    n1=Number( document.getElementsByName(elementName= "sum_num1")[0].value);
+    n2= document.getElementsByName(elementName= "sum_num2")[0].value;
+    n2= document.getElementsByName(elementName= "sum_total")[0].value =n1+ Number(n2);
+}
+function restar() {
+    var n1,n2;
+    n1=Number( document.getElementsByName(elementName= "res_num1")[0].value);
+    n2= document.getElementsByName(elementName= "res_num2")[0].value;
+    n2= document.getElementsByName(elementName= "res_total")[0].value =n1- Number(n2);
+}
+function multiplicar() {
+    var n1,n2;
+    n1=Number( document.getElementsByName(elementName= "mul_num1")[0].value);
+    n2= document.getElementsByName(elementName= "mul_num2")[0].value;
+    n2= document.getElementsByName(elementName= "mul_total")[0].value =n1* Number(n2);
+}
+function dividir() {
+    var n1,n2;
+    n1=Number( document.getElementsByName(elementName= "div_num1")[0].value);
+    n2= document.getElementsByName(elementName= "div_num2")[0].value;
+    n2= document.getElementsByName(elementName= "div_total")[0].value =n1/ Number(n2);
+}
