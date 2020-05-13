@@ -46,3 +46,11 @@ function GaR(id) {
     document.getElementById(elementid="grados").value=grad;
     document.getElementById(elementid="radianes").value=rad;
 }
+function mo(vmo){
+    if(vmo=="val_mostrar"){
+        document.getElementById(elementid="divmo").style.display= 'block';
+    }else if(vmo=="val_ocultar"){
+        document.getElementById(elementid="divmo").style.display= 'none';
+    }
+
+}
